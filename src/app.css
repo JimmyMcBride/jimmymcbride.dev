@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Newsreader';
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url('https://fonts.gstatic.com/s/newsreader/v21/cY9qfjOCX1hbuyalUrK439vogpTV9-stk5ewGCjg1Awo.woff2')
+		format('woff2');
+}
+
+@font-face {
+	font-family: 'Newsreader';
+	font-style: italic;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url('https://fonts.gstatic.com/s/newsreader/v21/cY9kfjOCX1hbuyalUrK439vogpTVwacP2sdl0ps3L2x4d4c.woff2')
+		format('woff2');
+}
+
+@theme {
+	/* Catppuccin Mocha */
+	--color-base: #1e1e2e;
+	--color-mantle: #181825;
+	--color-crust: #11111b;
+	--color-text: #cdd6f4;
+	--color-subtext1: #bac2de;
+	--color-subtext0: #a6adc8;
+	--color-overlay2: #9399b2;
+	--color-overlay1: #7f849c;
+	--color-overlay0: #6c7086;
+	--color-surface2: #585b70;
+	--color-surface1: #45475a;
+	--color-surface0: #313244;
+	--color-blue: #89b4fa;
+	--color-lavender: #b4befe;
+	--color-sapphire: #74c7ec;
+	--color-sky: #89dceb;
+	--color-teal: #94e2d5;
+	--color-green: #a6e3a1;
+	--color-yellow: #f9e2af;
+	--color-peach: #fab387;
+	--color-maroon: #eba0ac;
+	--color-red: #f38ba8;
+	--color-mauve: #cba6f7;
+	--color-pink: #f5c2e7;
+	--color-flamingo: #f2cdcd;
+	--color-rosewater: #f5e0dc;
+
+	--font-headline: 'Newsreader', serif;
+	--font-body: 'Be Vietnam Pro', 'Inter', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+::selection {
+	background: oklch(from var(--color-mauve) l c h / 0.3);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-base);
+	color: var(--color-text);
+	font-family: var(--font-body);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
