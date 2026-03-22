@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { api } from '../../../convex/_generated/api';
+	import { api } from '$convex/_generated/api';
 	import { useConvexClient, useQuery } from 'convex-svelte';
 
 	const client = useConvexClient();
