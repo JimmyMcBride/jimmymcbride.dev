@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { PUBLIC_CONVEX_URL } from "$env/static/public";
+  import RealtimeCounter from "$lib/components/realtime-counter.svelte";
+
   const stats = [
     { value: "100", label: "Posts" },
     { value: "22,929", label: "Followers" },
@@ -188,6 +191,10 @@
       </div>
     </div>
   </section>
+
+  {#if PUBLIC_CONVEX_URL}
+    <RealtimeCounter />
+  {/if}
 
   <!-- Capabilities -->
   <section id="capabilities" class="max-w-7xl mx-auto px-6 py-24 md:py-32">
